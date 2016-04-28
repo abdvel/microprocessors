@@ -17,8 +17,8 @@ ortadan kalkmaktadır. Tek geçişli (debug vb.) ve iki geçişli (Turbo Assembl
 arasındaki bu fark, aşağıda debug ile Unassemble edilen örnek program parçasından açıklanabilir.
 
 
-|Tek geçişli (debug vb.)Assembler|||||||2geçişli(masm,tasm vb.)Assembler|
-|------------------------------- |-- |-- |-- |-- |-- |-- |------------------------------- |
+|Tek geçişli (debug vb.)Assembler|Tek geçişli (debug vb.)Assembler|Tek geçişli (debug vb.)Assembler|Tek geçişli (debug vb.)Assembler|2geçişli(masm,tasm vb.)Assembler|2geçişli(masm,tasm vb.)Assembler|2geçişli(masm,tasm vb.)Assembler|2geçişli(masm,tasm vb.)Assembler|
+|------------------------------- |------------------------------- |------------------------------- |------------------------------- |------------------------------- |------------------------------- |------------------------------- |------------------------------- |
 |17C2:014A|90      |NOP|   	     |90    	|   	  |NOP|   	      |
 |17C2:014B|8B164B3A|MOV|DX,[3A4B]|8B164B3A|   	  |MOV|DX,[SEVIYE]|
 |17C2:014F|ED      |IN |AX,DX    |ED   	  |TEKRAR:|IN |AX,DX   	  |
