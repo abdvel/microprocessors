@@ -14,7 +14,7 @@
       28.04.2016
 
 
-[11]:https://www.google.com/url?q=http://ceng2.ktu.edu.tr/~ulutas/Courses/MicroProcessors/up2nd.pdf&sa=D&ust=1461854616500000&usg=AFQjCNHv1aEkduWVDqtDvJhuLTJ-_Kv0qA
+[11]:https://github.com/abdullahvelioglu/microprocessors/blob/master/instruction.md
 [12]:http://bit.ly/mikro_odevyukle
 [13]:http://ceng2.ktu.edu.tr/~ulutas/Courses/MicroProcessors/arg_masm.asm
 [14]:http://ceng2.ktu.edu.tr/~ulutas/Courses/MicroProcessors/arg_tasm.asm
