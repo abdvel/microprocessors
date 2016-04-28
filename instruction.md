@@ -49,7 +49,7 @@ Assembly gibi düşük seviyeli bir dilde bile, değişken değerlerinin tutuldu
 
 Turbo Assembler ile bu yönergede geliştirilmesi özetle anlatılacak olan program, 1. uygulama yönergesinde olduğu gibi 21. DOS kesmesinin 9. işlevini kullanarak ekrana bir karakter dizisi yazdırmaktadır. Turbo Assembler, tek geçişli Assembler, debug ile kıyaslanamayacak kadar gelişmiş bir 2-geçişli Assembler olup, komut satırından **tasm** adı ile başlatılmaktadır. Aşağıda Turbo Assembler 2.0’ın, 1. uygulama yönergesinde 64-bit işletim sistemleri için önerilen emülatör üzerinde **dos5asm** imajı içinden çalıştırıldığında kullanımını özetleyen ekran çıktısı görülmektedir.
 
-![GitHub Settings](/blob/master/picture.png)  
+![GitHub Settings](/picture.png)  
 
 İlk satırdaki temel kullanım bilgisinden de görüldüğü gibi Assembler, **asm** uzantılı dosya içindeki emir kodlarından oluşan Assembly programı derleyerek, **obj** uzantılı çalıştırılabilir amaç (object) kod dosyası oluşturabilmektedir. Her ne kadar 1. uygulama yönergesinde açıklanan şekilde, debug’a komut satırından girilecek tüm veriler bir dosyaya (örneğin komutlar.txt) yazılarak yönlendirme ile;
 ```bash
