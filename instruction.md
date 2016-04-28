@@ -17,18 +17,18 @@ ortadan kalkmaktadır. Tek geçişli (debug vb.) ve iki geçişli (Turbo Assembl
 arasındaki bu fark, aşağıda debug ile Unassemble edilen örnek program parçasından açıklanabilir.
 
 
-|Tek geçişli (debug vb.)Assembler||2geçişli(masm,tasm vb.)Assembler|
-|------------------------------- ||------------------------------- |
-|17C2:014A|90      |NOP|   	     ||90    	 |   	   |NOP|   	       |
-|17C2:014B|8B164B3A|MOV|DX,[3A4B]||8B164B3A|   	   |MOV|DX,[SEVIYE]|
-|17C2:014F|ED      |IN |AX,DX    ||ED   	 |TEKRAR:|IN |AX,DX   	 |
-|17C2:0150|3B064D3A|CMP|AX,[3A4D]||3B064D3A|   	   |CMP|AX,[SINIR] |
-|17C2:0154|7F02  	 |JG |0158     ||7F02    |   	   |JG |TAMAM   	 |
-|17C2:0156|EBF7    |JMP|014F   	 ||EBF7    |   	   |JMP|TEKRAR   	 |
-|17C2:0158|8B164F3A|MOV|DX,[3A4F]||8B164F3A|TAMAM: |MOV|DX,[VANA]  |
-|17C2:015C|A1513A  |MOV|AX,[3A51]||A1513A  |   	   |MOV|AX,[KAPAT] |
-|17C2:015F|EF   	 |OUT|DX,AX    ||EF    	 |   	   |OUT|DX,AX   	 |
-|17C2:0160|90   	 |NOP|         ||90      |   	   |NOP|   	       |
+|Tek geçişli (debug vb.)Assembler|2geçişli(masm,tasm vb.)Assembler|
+|------------------------------- |------------------------------- |
+|17C2:014A|90      |NOP|   	     |90    	|   	  |NOP|   	      |
+|17C2:014B|8B164B3A|MOV|DX,[3A4B]|8B164B3A|   	  |MOV|DX,[SEVIYE]|
+|17C2:014F|ED      |IN |AX,DX    |ED   	  |TEKRAR:|IN |AX,DX   	  |
+|17C2:0150|3B064D3A|CMP|AX,[3A4D]|3B064D3A|   	  |CMP|AX,[SINIR] |
+|17C2:0154|7F02  	 |JG |0158     |7F02    |   	  |JG |TAMAM   	  |
+|17C2:0156|EBF7    |JMP|014F   	 |EBF7    |   	  |JMP|TEKRAR   	|
+|17C2:0158|8B164F3A|MOV|DX,[3A4F]|8B164F3A|TAMAM: |MOV|DX,[VANA]  |
+|17C2:015C|A1513A  |MOV|AX,[3A51]|A1513A  |   	  |MOV|AX,[KAPAT] |
+|17C2:015F|EF   	 |OUT|DX,AX    |EF    	|   	  |OUT|DX,AX   	  |
+|17C2:0160|90   	 |NOP|         |90      |   	  |NOP|   	      |
 
 
 
@@ -38,10 +38,10 @@ Bir depodaki sıvı seviyesini, **SEVIYE** adlı adreste bulunan bir algılayıc
 |Sembolik Adres|Gerçek Adres 	|
 |------------- |------------	|
 |      …       |      …       |
-|   SEVIYE     |             	|
-|   SINIR      |             	|
-|   VANA       |             	|
-|   KAPAT	     |             	|
+|   SEVIYE     |    3A4B     	|
+|   SINIR      |    3A4D      |
+|   VANA       |    3A4F     	|
+|   KAPAT	     |    3A51     	|
 |      …       |      …       |
 
 
@@ -49,7 +49,7 @@ Assembly gibi düşük seviyeli bir dilde bile, değişken değerlerinin tutuldu
 
 Turbo Assembler ile bu yönergede geliştirilmesi özetle anlatılacak olan program, 1. uygulama yönergesinde olduğu gibi 21. DOS kesmesinin 9. işlevini kullanarak ekrana bir karakter dizisi yazdırmaktadır. Turbo Assembler, tek geçişli Assembler, debug ile kıyaslanamayacak kadar gelişmiş bir 2-geçişli Assembler olup, komut satırından **tasm** adı ile başlatılmaktadır. Aşağıda Turbo Assembler 2.0’ın, 1. uygulama yönergesinde 64-bit işletim sistemleri için önerilen emülatör üzerinde **dos5asm** imajı içinden çalıştırıldığında kullanımını özetleyen ekran çıktısı görülmektedir.
 
-![GitHub Settings](/picture.png)  
+![GitHub Settings](/blob/master/picture.png)  
 
 İlk satırdaki temel kullanım bilgisinden de görüldüğü gibi Assembler, **asm** uzantılı dosya içindeki emir kodlarından oluşan Assembly programı derleyerek, **obj** uzantılı çalıştırılabilir amaç (object) kod dosyası oluşturabilmektedir. Her ne kadar 1. uygulama yönergesinde açıklanan şekilde, debug’a komut satırından girilecek tüm veriler bir dosyaya (örneğin komutlar.txt) yazılarak yönlendirme ile;
 ```bash
