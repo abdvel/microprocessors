@@ -10,6 +10,8 @@
 ##Uygun isimli programınızı değerlendirilmek üzere, derlenmesi için gereken tüm program adlarını içeren bir yığın betik (bat uzantılı batch dosya) ile, [http://bit.ly/mikro_odevyukle][12] adresini kullanarak 8 Mayıs 2016 tarihine kadar yüklemeniz gerekmektedir.
 
 ##Programınızı geliştirme sırasında kaynak olarak kullanabileceğiniz, komut satırından verilen iki dosya adını alarak giriş dosyasından okuduğu metini çıkış dosyasına  yazan bir Assembly dili programın Turbo ve Microsoft Assembler  için kaynak kodları, [http://ceng2.ktu.edu.tr/~ulutas/Courses/MicroProcessors/arg_masm.asm][13] ve [http://ceng2.ktu.edu.tr/~ulutas/Courses/MicroProcessors/arg_tasm.asm][14] dosyaları içinde bulunmaktadır.
+
+##Sonuç: Berger kodlanmış assembly programına [buradan][16] ulaşabilirsiniz. 
       [Doç. Dr. Mustafa ULUTAŞ][15]
       28.04.2016
 
@@ -19,3 +21,4 @@
 [13]:http://ceng2.ktu.edu.tr/~ulutas/Courses/MicroProcessors/arg_masm.asm
 [14]:http://ceng2.ktu.edu.tr/~ulutas/Courses/MicroProcessors/arg_tasm.asm
 [15]:http://ceng2.ktu.edu.tr/~ulutas/Courses/MicroProcessors/
+[16]:https://github.com/abdullahvelioglu/microprocessors/blob/master/bergercode.asm
